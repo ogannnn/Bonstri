@@ -1,14 +1,9 @@
 <?php
-///////////////////////////////////////////
-///////CREATED BY ARUDJI HERMATYAR////////
-//////www.facebook.com/bantalku567///////
-/////https://github.com/arudji1211//////
-///////////////////////////////////////
 
 include 'tri_req.php';
 
 $tri = new tri();
-$imei = "868880043302499";
+$imei = "869130034389465";
 echo "Masukkan No Telepon : ";
 $msisdn = trim(fgets(STDIN));
 $otp = $tri->request_otp($msisdn,$imei);
